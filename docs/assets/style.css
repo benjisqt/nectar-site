@@ -4,16 +4,8 @@
   box-sizing: border-box;
 }
 
-@keyframes gradientRotate {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
 body {
-  background: linear-gradient(-45deg, #0d0d1a, #1a0a2e, #0a0a2e, #2d1b69, #1a0d3d);
-  background-size: 400% 400%;
-  animation: gradientRotate 12s ease infinite;
+  background: #1a0800;
   color: #f0f0f0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   min-height: 100vh;
@@ -22,7 +14,18 @@ body {
   justify-content: center;
 }
 
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 main {
+  position: relative;
+  z-index: 1;
   text-align: center;
   padding: 2rem;
 }
